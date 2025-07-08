@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Category Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #f1f1f1;
+      height: 100vh;
+      padding: 10px;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+
+    .category {
+      cursor: pointer;
+      padding: 10px;
+      background-color: #fff;
+      margin-bottom: 5px;
+      transition: 0.3s;
+      border-radius: 5px;
+    }
+
+    .category:hover {
+      background-color: #ddd;
+    }
+
+    .category.active {
+      background-color: silver;
+    }
+
+    .sub-options {
+      display: none;
+      padding-left: 15px;
+      margin-top: 5px;
+    }
+
+    .sub-options a {
+      display: block;
+      padding: 5px 0;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .sub-options a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      padding: 20px;
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="category" onclick="toggleCategory(this)">Electronics
+    <div class="sub-options">
+      <a href="electronics1.html">Mobile</a>
+      <a href="electronics2.html">Laptop</a>
+      <a href="electronics3.html">TV</a>
+      <a href="electronics4.html">Camera</a>
+      <a href="electronics5.html">Speakers</a>
+      <a href="electronics6.html">Tablet</a>
+      <a href="electronics7.html">Monitor</a>
+      <a href="electronics8.html">Headphones</a>
+      <a href="electronics9.html">Drone</a>
+      <a href="electronics10.html">Smartwatch</a>
+    </div>
+  </div>
+
+  <div class="category" onclick="toggleCategory(this)">Home Appliance
+    <div class="sub-options">
+      <a href="home1.html">Refrigerator</a>
+      <a href="home2.html">Washing Machine</a>
+      <a href="home3.html">Microwave</a>
+      <a href="home4.html">Air Conditioner</a>
+      <a href="home5.html">Heater</a>
+      <a href="home6.html">Fan</a>
+      <a href="home7.html">Vacuum Cleaner</a>
+      <a href="home8.html">Water Purifier</a>
+      <a href="home9.html">Iron</a>
+      <a href="home10.html">Dishwasher</a>
+    </div>
+  </div>
+
+  <div class="category" onclick="toggleCategory(this)">Fashion & Clothes
+    <div class="sub-options">
+      <a href="fashion1.html">Shirts</a>
+      <a href="fashion2.html">Jeans</a>
+      <a href="fashion3.html">Dresses</a>
+      <a href="fashion4.html">Jackets</a>
+      <a href="fashion5.html">T-Shirts</a>
+      <a href="fashion6.html">Skirts</a>
+      <a href="fashion7.html">Shoes</a>
+      <a href="fashion8.html">Hats</a>
+      <a href="fashion9.html">Scarves</a>
+      <a href="fashion10.html">Socks</a>
+    </div>
+  </div>
+
+  <div class="category" onclick="toggleCategory(this)">Toys & Gifts
+    <div class="sub-options">
+      <a href="toys1.html">Teddy Bears</a>
+      <a href="toys2.html">Board Games</a>
+      <a href="toys3.html">Lego</a>
+      <a href="toys4.html">Puzzles</a>
+      <a href="toys5.html">RC Cars</a>
+      <a href="toys6.html">Dolls</a>
+      <a href="toys7.html">Art Kits</a>
+      <a href="toys8.html">Slime</a>
+      <a href="toys9.html">Craft Toys</a>
+      <a href="toys10.html">Educational</a>
+    </div>
+  </div>
+
+  <div class="category" onclick="toggleCategory(this)">Hardware
+    <div class="sub-options">
+      <a href="hardware1.html">Hammer</a>
+      <a href="hardware2.html">Screwdriver</a>
+      <a href="hardware3.html">Drill</a>
+      <a href="hardware4.html">Saw</a>
+      <a href="hardware5.html">Wrench</a>
+      <a href="hardware6.html">Nails</a>
+      <a href="hardware7.html">Bolts</a>
+      <a href="hardware8.html">Measuring Tape</a>
+      <a href="hardware9.html">Level</a>
+      <a href="hardware10.html">Toolbox</a>
+    </div>
+  </div>
+
+  <div class="category" onclick="toggleCategory(this)">Software
+    <div class="sub-options">
+      <a href="software1.html">Windows</a>
+      <a href="software2.html">MS Office</a>
+      <a href="software3.html">Photoshop</a>
+      <a href="software4.html">Antivirus</a>
+      <a href="software5.html">Code Editor</a>
+      <a href="software6.html">AutoCAD</a>
+      <a href="software7.html">IDE</a>
+      <a href="software8.html">CRM</a>
+      <a href="software9.html">ERP</a>
+      <a href="software10.html">Cloud Tools</a>
+    </div>
+  </div>
+
+  <div class="category" onclick="toggleCategory(this)">Grocery
+    <div class="sub-options">
+      <a href="grocery1.html">Rice</a>
+      <a href="grocery2.html">Wheat</a>
+      <a href="grocery3.html">Sugar</a>
+      <a href="grocery4.html">Salt</a>
+      <a href="grocery5.html">Spices</a>
+      <a href="grocery6.html">Tea</a>
+      <a href="grocery7.html">Oil</a>
+      <a href="grocery8.html">Milk</a>
+      <a href="grocery9.html">Bread</a>
+      <a href="grocery10.html">Snacks</a>
+    </div>
+  </div>
+
+  <div class="category" onclick="toggleCategory(this)">Beauty Products
+    <div class="sub-options">
+      <a href="beauty1.html">Lipstick</a>
+      <a href="beauty2.html">Foundation</a>
+      <a href="beauty3.html">Eyeliner</a>
+      <a href="beauty4.html">Moisturizer</a>
+      <a href="beauty5.html">Perfume</a>
+      <a href="beauty6.html">Face Wash</a>
+      <a href="beauty7.html">Shampoo</a>
+      <a href="beauty8.html">Conditioner</a>
+      <a href="beauty9.html">Hair Oil</a>
+      <a href="beauty10.html">Face Mask</a>
+    </div>
+  </div>
+
+  <div class="category" onclick="toggleCategory(this)">10 More Products
+    <div class="sub-options">
+      <a href="more1.html">Item 1</a>
+      <a href="more2.html">Item 2</a>
+      <a href="more3.html">Item 3</a>
+      <a href="more4.html">Item 4</a>
+      <a href="more5.html">Item 5</a>
+      <a href="more6.html">Item 6</a>
+      <a href="more7.html">Item 7</a>
+      <a href="more8.html">Item 8</a>
+      <a href="more9.html">Item 9</a>
+      <a href="more10.html">Item 10</a>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <h1>Welcome!</h1>
+  <p>Select a category to explore its items.</p>
+</div>
+
+<script>
+  function toggleCategory(el) {
+    document.querySelectorAll('.category').forEach(cat => {
+      if (cat !== el) {
+        cat.classList.remove('active');
+        cat.querySelector('.sub-options').style.display = 'none';
+      }
+    });
+
+    el.classList.toggle('active');
+    const submenu = el.querySelector('.sub-options');
+    submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+
+</body>
+</html>

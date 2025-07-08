@@ -1,0 +1,298 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>sing up page</title>
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OTP Sign In - BilCal Store</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 60px auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #232f3e;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"], input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .otp-inputs {
+      display: none;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .otp-inputs input {
+      width: 40px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #f0c14b;
+      border: 1px solid #a88734;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .footer-text {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  </style>
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* BLACK NAVBAR */
+    nav {
+      background-color: black;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      border-bottom: 2px solid white;
+    }
+
+    nav ul li {
+      position: relative;
+      border-right: 1px solid white;
+    }
+
+    nav ul li:last-child {
+      border-right: none;
+    }
+
+    nav ul li a {
+      display: block;
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    /* HOME SPECIAL STYLING */
+    nav ul li a.home {
+      background-color: green;
+    }
+
+    nav ul li a.home:hover {
+      background-color: #6dd56d;
+    }
+
+    /* HOVER FOR OTHER ITEMS */
+    nav ul li a:hover {
+      background-color: #333;
+    }
+
+    /* ICON COLORS */
+    .fa-icon-white {
+      color: white;
+      margin-right: 6px;
+    }
+
+    .fa-icon-blue {
+      color: skyblue;
+      margin-right: 6px;
+    }
+
+    /* DROPDOWN STYLING */
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #444;
+      min-width: 200px;
+      z-index: 1000;
+      border-top: 2px solid white;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    nav ul li ul li {
+      border-bottom: 1px solid white;
+    }
+
+    nav ul li ul li a {
+      padding: 12px 16px;
+    }
+
+    /* RESPONSIVE */
+    @media screen and (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li ul {
+        position: static;
+      }
+    }
+  </style>
+   <meta charset="UTF-8">
+   
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            background-image: url('/home/kali/Pictures/dmages.jpeg'); /* 👈 Replace with your image */
+            background-size: cover;                  /* ✅ Full screen fit */
+            background-position: center;             /* 🎯 Centered */
+            background-repeat: no-repeat;            /* ❌ No repeat */
+            background-attachment: fixed;            /* 📌 Stays fixed during scroll */
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        .content {
+            padding-top: 20%;
+        }
+    </style>
+  </head>
+<body>
+
+  <nav>
+    <ul>
+
+     
+      <li><a href="home.html" class="home"><i class="fas fa-home fa-icon-white"></i>Home</a></li>
+      <li><a href="page up.html"><i class="fas fa-arrow-up fa-icon-white"></i>Page Up</a></li>
+      <li><a href="contact us.html"><i class="fas fa-envelope fa-icon-white"></i>Contact Us</a></li>
+      <li><a href="reoport.html"><i class="fas fa-chart-line fa-icon-white"></i>Report</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle fa-icon-white"></i>About</a></li>
+      <li><a href="my prodoct.html"><i class="fas fa-box fa-icon-white"></i>my Product</a></li>
+      <li><a href="shoping.html"><i class="fas fa-shopping-cart fa-icon-white"></i>Shopping</a></li>
+      <li><a href="read and write.html"><i class="fas fa-pen-nib fa-icon-white"></i>Read & Write</a></li>
+     <li><a href="Sing up.html"><i class="fas fa-user-plus fa-icon-blue"></i>Sign Up</a></li>
+      <!-- DROPDOWN -->
+      <li>
+        <a href="#"><i class="fas fa-bars fa-icon-white"></i>More ▼</a>
+        <ul>
+          <li><a href="services.html"><i class="fas fa-concierge-bell fa-icon-white"></i>Services</a></li>
+          <li><a href="portfolio.html"><i class="fas fa-briefcase fa-icon-white"></i>Portfolio</a></li>
+          <li><a href="blog.html"><i class="fas fa-blog fa-icon-white"></i>Blog</a></li>
+          <li><a href="faq.html"><i class="fas fa-question-circle fa-icon-white"></i>FAQ</a></li>
+          <li><a href="gallery.html"><i class="fas fa-image fa-icon-white"></i>Gallery</a></li>
+          <li><a href="testimonials.html"><i class="fas fa-comments fa-icon-white"></i>Testimonials</a></li>
+          <li><a href="team.html"><i class="fas fa-users fa-icon-white"></i>Team</a></li>
+          <li><a href="career.html"><i class="fas fa-briefcase fa-icon-white"></i>Career</a></li>
+          <li><a href="support.html"><i class="fas fa-headset fa-icon-white"></i>Support</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <div style="padding: 20px;">
+    <h2>Full Menu Bar with All Features</h2>
+    <p>This menu includes all pages, dropdown support, black navbar, icons, green home, blue icon for sign up, and lines between all items.</p>
+  </div>
+
+
+   <div class="container">
+    <h2>OTP Sign In</h2>
+
+    <!-- Step 1: Enter mobile or email -->
+    <div id="step1">
+      <label for="phone">Mobile Number or Email</label>
+      <input type="text" id="userInput" placeholder="Enter mobile or email" required>
+      <button onclick="sendOTP()">Send OTP</button>
+    </div>
+
+    <!-- Step 2: Enter OTP -->
+    <div id="step2" style="display:none;">
+      <label>Enter OTP</label>
+      <div class="otp-inputs" id="otpInputs">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+      </div>
+      <button onclick="verifyOTP()">Verify OTP</button>
+    </div>
+
+    <div class="footer-text">
+      <p>Didn't receive OTP? <a href="#">Resend</a></p>
+    </div>
+  </div>
+
+  <script>
+    function sendOTP() {
+      const input = document.getElementById("userInput").value;
+      if (input === "") {
+        alert("Please enter mobile number or email.");
+        return;
+      }
+      // Show OTP section
+      document.getElementById("step1").style.display = "none";
+      document.getElementById("step2").style.display = "block";
+      document.getElementById("otpInputs").style.display = "flex";
+      alert("OTP sent to " + input);
+    }
+
+    function verifyOTP() {
+      const inputs = document.querySelectorAll("#otpInputs input");
+      let otp = "";
+      inputs.forEach(input => otp += input.value);
+      if (otp.length < 4) {
+        alert("Please enter complete OTP");
+      } else {
+        alert("OTP verified: " + otp);
+        // Redirect ya login success code yahan daalein
+      }
+    }
+  </script>
+
+</body>
+</html>
